@@ -6,12 +6,15 @@ const device = document.querySelector("device");
 // create grid for etch a sketch
 function createGrid(numOfCells) {
   for (let i = 0; i < numOfCells; i++) {
+    // creating element and adding an id and class
     const row = document.createElement("div");
-    // maybe nested loop would be better to generate cells?
+    row.setAttribute("class", "row");
+    for (let j = 0; j < numOfCells; j++) {
+      const cell = document.createElement("cell");
+      cell.setAttribute("class", "cell");
+      row.appendChild(cell);
+    }
     device.appendChild(row);
-  }
-  for (let i = 0; i < numOfCells; i++) {
-    // creating cells in those rows
   }
   return;
 }
