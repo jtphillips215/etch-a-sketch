@@ -39,3 +39,9 @@ cells.forEach((cell) => {
 
 // adding listener for reset button
 const reset = document.querySelector("#reset");
+
+reset.addEventListener("click", () => {
+  cells.forEach((cell) => {
+    cell.classList.remove("hovered");
+  });
+});
