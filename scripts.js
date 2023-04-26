@@ -28,6 +28,9 @@ function cellHover() {
 
 // adding references to on screen elements
 const cells = document.querySelectorAll(".cell");
+const reset = document.querySelector("#reset");
+const color = document.querySelector("#color");
+const classic = document.querySelector("#classic");
 
 // adding event listener for cell hover
 cells.forEach((cell) => {
@@ -38,8 +41,6 @@ cells.forEach((cell) => {
 });
 
 // adding listener for reset button
-const reset = document.querySelector("#reset");
-
 reset.addEventListener("click", () => {
   cells.forEach((cell) => {
     cell.classList.remove("hovered");
