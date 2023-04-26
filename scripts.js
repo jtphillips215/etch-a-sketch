@@ -15,6 +15,7 @@ function createGrid(numOfCells) {
       row.appendChild(cell);
     }
     screen.appendChild(row);
+    console.log("Cells generated");
   }
 }
 
@@ -45,4 +46,5 @@ reset.addEventListener("click", () => {
   cells.forEach((cell) => {
     cell.classList.remove("hovered");
   });
+  console.log("Reset");
 });
