@@ -1,5 +1,6 @@
 "use strict";
 
+/*
 // creating a reference to the etch a sketch
 const device = document.querySelector("#device");
 
@@ -17,5 +18,4 @@ function createGrid(numOfCells) {
     device.appendChild(row);
   }
 }
-
-createGrid(16);
+*/
