@@ -26,6 +26,12 @@ body {
   height: 540px;
 }
 
+/*
+#container.color {
+  background-color: black;
+}
+*/
+
 #screen {
   display: flex;
   flex-direction: column;
@@ -50,6 +56,17 @@ body {
   border: 1px dotted #81964A;
   aspect-ratio: 1/1;
 }
+
+.cell.hovered {
+  background-color: #5D6E35;
+}
+
+/*
+.cell.color {
+  background-color: #C3BFBC;
+  border: 1px dotted #88868B;
+}
+*/
 
 #controls {
   display: flex;

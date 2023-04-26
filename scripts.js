@@ -18,16 +18,24 @@ function createGrid(numOfCells) {
   }
 }
 
-// cellHover controls what happens when a cell gets hovered
-
+// calling function to create grid
 createGrid(16);
 
-// adding event listener for cell hover
+// cellHover controls what happens when a cell gets hovered
+function cellHover() {
+  //
+}
+
+// adding references to on screen elements
 const cells = document.querySelectorAll(".cell");
 
+// adding event listener for cell hover
 cells.forEach((cell) => {
   cell.addEventListener("mouseover", function (e) {
-    e.target.style.background = "#5D6E35";
+    cell.classList.add("hovered");
     console.log("Hover");
   });
 });
+
+// adding listener for reset button
+const reset = document.querySelector("#reset");
