@@ -18,6 +18,30 @@ body {
   color: #404088;
   font-size: 5em;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+#device {
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  width: 80%;
+}
+
+.cell {
+  flex: 1;
+  background-color: #9CB464;
+  height: 56px;
 }
 
 footer {
