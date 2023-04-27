@@ -16,7 +16,7 @@ body.color {
   color: #404088;
   font-size: 5em;
   margin: 0;
-  padding: 2% 0;
+  padding: .05em 0;
 }
 
 #title.color {
@@ -107,6 +107,6 @@ footer {
   bottom: 0%;
   left: 0%;
   width: 100%;
-  padding-top: .25em;
+  margin-top: .25em;
   padding-bottom: .25em;
 }
