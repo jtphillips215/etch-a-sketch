@@ -46,6 +46,9 @@ createGrid(16);
 
 // adding references to on screen elements
 const cells = document.querySelectorAll(".cell");
+const body = document.querySelector("body");
+const title = document.querySelector("#title");
+const container = document.querySelector("#container");
 const reset = document.querySelector("#reset");
 const color = document.querySelector("#color");
 const classic = document.querySelector("#classic");
@@ -55,8 +58,9 @@ cells.forEach((cell) => {
   cell.addEventListener("mouseover", function (e) {
     if (cell.classList.contains("color")) {
       randomColor(e);
+    } else {
+      cell.classList.add("hovered");
     }
-    cell.classList.add("hovered");
     console.log("Hover");
   });
 });
@@ -64,13 +68,31 @@ cells.forEach((cell) => {
 // adding listener for reset button
 reset.addEventListener("click", () => {
   cells.forEach((cell) => {
-    cell.classList.remove("hovered");
     if (cell.classList.contains("color")) {
-      cell.classList.remove("color");
-      cell.classList.add("color");
+      cell.style.backgroundColor = "#C3BFBC";
+    } else {
+      cell.classList.remove("hovered");
     }
   });
   console.log("Reset");
 });
 
 // adding listener for activating color mode
+color.addEventListener("click", () => {
+  cells.forEach((cell) => {
+    cell.classList.add("color");
+  });
+  body.classList.add("color");
+  title.classList.add("color");
+  container.classList.add("color");
+});
+
+// adding listener for activating classic mode
+classic.addEventListener("click", () => {
+  cells.forEach((cell) => {
+    cell.classList.remove("color");
+  });
+  body.classList.remove("color");
+  title.classList.remove("color");
+  container.classList.remove("color");
+});
