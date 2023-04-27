@@ -60,6 +60,7 @@ body.color {
   flex: auto;
   background-color: #9CB464;
   border: 1px dotted #81964A;
+  width: 25px;
   aspect-ratio: 1/1;
 }
 
