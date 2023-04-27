@@ -100,12 +100,13 @@ button:hover {
 
 footer {
   text-align: center;
-  font-size: larger;
+  font-size: x-large;
   font-weight: bold;
   color: #404088;
   position: absolute;
   bottom: 0%;
   left: 0%;
   width: 100%;
+  padding-top: .25em;
   padding-bottom: .25em;
 }
