@@ -89,10 +89,14 @@ color.addEventListener("click", () => {
 
 // adding listener for activating classic mode
 classic.addEventListener("click", () => {
-  cells.forEach((cell) => {
-    cell.classList.remove("color");
-  });
-  body.classList.remove("color");
-  title.classList.remove("color");
-  container.classList.remove("color");
+  if (body.classList.contains("color")) {
+    window.location.reload();
+    /*
+    cells.forEach((cell) => {
+      cell.classList.remove("color");
+    });
+    body.classList.remove("color");
+    title.classList.remove("color");
+    container.classList.remove("color");*/
+  }
 });
