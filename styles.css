@@ -8,11 +8,19 @@ body {
   font-family: 'VT323', monospace;
 }
 
+body.color {
+  background-color: #0ABFBC;
+}
+
 #title {
   color: #404088;
   font-size: 5em;
   margin: 0;
   padding: 2% 0;
+}
+
+#title.color {
+  color: white;
 }
 
 #container {
@@ -26,11 +34,9 @@ body {
   height: 540px;
 }
 
-/*
 #container.color {
   background-color: black;
 }
-*/
 
 #screen {
   display: flex;
@@ -61,12 +67,10 @@ body {
   background-color: #5D6E35;
 }
 
-/*
 .cell.color {
   background-color: #C3BFBC;
   border: 1px dotted #88868B;
 }
-*/
 
 #controls {
   display: flex;

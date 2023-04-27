@@ -19,13 +19,30 @@ function createGrid(numOfCells) {
   }
 }
 
+// random color for color mode
+function randomColor(e) {
+  let ranNum = Math.floor(Math.random() * 5);
+  if (ranNum == 0) {
+    e.target.style.background = "lime";
+  }
+  if (ranNum == 1) {
+    e.target.style.background = "cornflowerblue";
+  }
+  if (ranNum == 2) {
+    e.target.style.background = "coral";
+  }
+  if (ranNum == 3) {
+    e.target.style.background = "red";
+  }
+  if (ranNum == 4) {
+    e.target.style.background = "purple";
+  }
+  console.log("color cell");
+  return;
+}
+
 // calling function to create grid
 createGrid(16);
-
-// cellHover controls what happens when a cell gets hovered
-function cellHover() {
-  //
-}
 
 // adding references to on screen elements
 const cells = document.querySelectorAll(".cell");
@@ -36,6 +53,9 @@ const classic = document.querySelector("#classic");
 // adding event listener for cell hover
 cells.forEach((cell) => {
   cell.addEventListener("mouseover", function (e) {
+    if (cell.classList.contains("color")) {
+      randomColor(e);
+    }
     cell.classList.add("hovered");
     console.log("Hover");
   });
@@ -45,6 +65,12 @@ cells.forEach((cell) => {
 reset.addEventListener("click", () => {
   cells.forEach((cell) => {
     cell.classList.remove("hovered");
+    if (cell.classList.contains("color")) {
+      cell.classList.remove("color");
+      cell.classList.add("color");
+    }
   });
   console.log("Reset");
 });
+
+// adding listener for activating color mode
