@@ -98,6 +98,7 @@ classic.addEventListener("click", () => {
     });
     body.classList.remove("color");
     title.classList.remove("color");
-    container.classList.remove("color");*/
+    container.classList.remove("color");
+    */
   }
 });
