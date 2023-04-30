@@ -2,10 +2,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #C3BFBC;
   margin: 0;
   padding: 0;
   font-family: 'VT323', monospace;
+}
+
+body.classic {
+  background-color: #C3BFBC;
 }
 
 body.color {
@@ -13,10 +16,13 @@ body.color {
 }
 
 #title {
-  color: #404088;
   font-size: 5em;
   margin: 0;
   padding: 0;
+}
+
+#title.classic {
+  color: #404088;
 }
 
 #title.color {
@@ -28,10 +34,13 @@ body.color {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #88868B;
   border-radius: 16px;
   width: 810px;
   height: 540px;
+}
+
+#container.classic {
+  background-color: #88868B;
 }
 
 #container.color {
@@ -58,10 +67,13 @@ body.color {
 
 .cell {
   flex: auto;
-  background-color: #9CB464;
-  border: 1px dotted #81964A;
   width: 25px;
   aspect-ratio: 1/1;
+}
+
+.cell.classic {
+  background-color: #9CB464;
+  border: 1px dotted #81964A;
 }
 
 .cell.hovered {

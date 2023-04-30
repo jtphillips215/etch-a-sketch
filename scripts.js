@@ -12,6 +12,7 @@ function createGrid(numOfCells) {
     for (let j = 0; j < numOfCells * 1.5; j++) {
       const cell = document.createElement("div");
       cell.classList.add("cell");
+      cell.classList.add("classic");
       row.appendChild(cell);
     }
     screen.appendChild(row);
