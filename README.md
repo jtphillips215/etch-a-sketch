@@ -13,3 +13,5 @@ The game runs as follows:
 1. The player can drag their mouse along the screen to create a sketch.
 2. The player can switch modes by clicking the "Classic" or "Color" modes.
 3. The player can reset their doodle by clicking the "Reset" button.
+
+A second branch has been added to fix a bug dealing with switching from color back to classic mode after a reset. Currently, this is being bypassed by reloading the page. Possible solutions include generating the cells over on reset or toggling classes rather than recoloring the cells.
