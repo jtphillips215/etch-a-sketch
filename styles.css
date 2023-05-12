@@ -112,3 +112,7 @@ footer {
   margin-top: .25em;
   padding-bottom: .25em;
 }
+
+footer a {
+  color: #404088;
+}
